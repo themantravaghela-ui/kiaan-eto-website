@@ -2,20 +2,26 @@
 const menuToggle = document.getElementById('menuToggle');
 const navbar = document.getElementById('navbar');
 
-menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-    const icon = menuToggle.querySelector('i');
-    icon.classList.toggle('fa-bars');
-    icon.classList.toggle('fa-times');
-});
+if (menuToggle && navbar) {
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        }
+    });
+}
 
 // Close menu when clicking a link
 document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', () => {
         navbar.classList.remove('active');
         const icon = menuToggle.querySelector('i');
-        icon.classList.add('fa-bars');
-        icon.classList.remove('fa-times');
+        if (icon) {
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        }
     });
 });
 
@@ -27,7 +33,6 @@ window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (scrollY >= sectionTop - 100) {
             current = section.getAttribute('id');
         }
@@ -95,11 +100,11 @@ if (statsSection) {
 // Animate elements on scroll
 const animateOnScroll = () => {
     const elements = document.querySelectorAll('.service-card, .feature-card, .gallery-item, .contact-item');
-    
+
     elements.forEach(el => {
         const rect = el.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight - 100;
-        
+
         if (isVisible) {
             el.style.opacity = '1';
             el.style.transform = 'translateY(0)';
@@ -141,21 +146,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Image fallback - if images don't load, show colored placeholder
-const imageFallbacks = {
-    'heroImg': 'linear-gradient(135deg, #1a3a5c 0%, #0d8a9e 100%)',
-    'whyusImg': 'linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)'
-};
-
-Object.entries(imageFallbacks).forEach(([id, gradient]) => {
-    const img = document.getElementById(id);
-    if (img) {
-        img.addEventListener('error', () => {
-            img.style.display = 'none';
-            img.parentElement.style.background = gradient;
-            img.parentElement.style.minHeight = '300px';
-        });
-    }
-});
-
 console.log('KIAAN ETO Website Loaded Successfully!');
+
