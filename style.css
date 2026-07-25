@@ -1030,3 +1030,11 @@ body {
         font-size: 32px;
     }
 }
+
+/* Logo Image */
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
