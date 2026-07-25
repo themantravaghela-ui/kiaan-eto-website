@@ -147,3 +147,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 console.log('KIAAN ETO Website Loaded Successfully!');
+
