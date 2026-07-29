@@ -174,3 +174,52 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   .then(data => alert("Message sent successfully!"));
 });
 
+// Stats Counter Animation
+const statNumbers = document.querySelectorAll('.stat-number');
+let statsAnimated = false;
+
+function animateStats() {
+    const statsSection = document.querySelector('.stats-bar');
+    if (!statsSection) return;
+    
+    const sectionTop = statsSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (sectionTop < windowHeight - 100 && !statsAnimated) {
+        statsAnimated = true;
+        statNumbers.forEach(stat => {
+            const target = parseFloat(stat.dataset.target);
+            const suffix = stat.dataset.suffix || '';
+            const isDecimal = target % 1 !== 0;
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = target * easeOut;
+
+                if (isDecimal) {
+                    stat.textContent = current.toFixed(1) + suffix;
+                } else {
+                    stat.textContent = Math.floor(current).toLocaleString() + suffix;
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    if (isDecimal) {
+                        stat.textContent = target.toFixed(1) + suffix;
+                    } else {
+                        stat.textContent = target.toLocaleString() + suffix;
+                    }
+                }
+            }
+            requestAnimationFrame(updateCounter);
+        });
+    }
+}
+
+window.addEventListener('scroll', animateStats);
+window.addEventListener('load', animateStats);
