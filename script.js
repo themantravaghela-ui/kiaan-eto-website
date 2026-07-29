@@ -148,3 +148,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 console.log('KIAAN ETO Website Loaded Successfully!');
 
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  
+  // Get data from your HTML form
+  let formData = {
+    "data": [
+      {
+        "Name": document.getElementById("name").value,
+        "Email": document.getElementById("email").value,
+        "Message": document.getElementById("message").value
+      }
+    ]
+  };
+
+  // Send it to your Google Sheet
+  fetch("YOUR_SHEETDB_API_URL", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => alert("Message sent successfully!"));
+});
+
