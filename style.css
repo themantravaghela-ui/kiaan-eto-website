@@ -1038,3 +1038,141 @@ body {
     display: block;
 }
 
+/* KIAAN Add-On UI — paste at the very bottom of style.css */
+#kiaanScrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0d8a9e, #25d366, #f59e0b);
+  z-index: 99999;
+  transition: width 0.08s linear;
+}
+
+#kiaanFloatingWhatsApp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9998;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 18px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#kiaanFloatingWhatsApp:hover,
+#kiaanFloatingWhatsApp:focus-visible {
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.48);
+}
+
+#kiaanFloatingWhatsApp i {
+  font-size: 20px;
+}
+
+.kiaan-lightbox[hidden] {
+  display: none;
+}
+
+.kiaan-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99997;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(4, 13, 30, 0.9);
+  cursor: zoom-out;
+}
+
+.kiaan-lightbox img {
+  max-width: min(100%, 1000px);
+  max-height: 86vh;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.kiaan-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0a2a5c;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.kiaan-gallery-clickable {
+  cursor: zoom-in;
+}
+
+.kiaan-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 99999;
+  max-width: min(90vw, 460px);
+  padding: 13px 18px;
+  border-radius: 12px;
+  background: #0a2a5c;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 12px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.kiaan-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.kiaan-form-loading {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  #kiaanFloatingWhatsApp {
+    right: 14px;
+    bottom: 14px;
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  #kiaanFloatingWhatsApp span {
+    display: none;
+  }
+
+  #kiaanFloatingWhatsApp i {
+    font-size: 23px;
+  }
+
+  .kiaan-lightbox {
+    padding: 12px;
+  }
+}
+
