@@ -107,14 +107,33 @@
         <div class="contact-details"><a href="tel:+919558537188"><span class="detail-label">CALL OUR TEAM</span><strong>+91 95585 37188</strong></a><a href="tel:+919157310262"><span class="detail-label">ALTERNATE LINE</span><strong>+91 91573 10262</strong></a><a href="mailto:info@kiaaneto.com"><span class="detail-label">EMAIL</span><strong>info@kiaaneto.com</strong></a></div>
       </div>
       <form class="inquiry-card reveal" id="inquiryForm">
-        <div class="form-top"><span class="eyebrow">SERVICE ENQUIRY</span><span class="form-live"><i></i> 24/7 PICKUP SUPPORT</span></div>
-        <label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name">
-        <label for="facility">Hospital / clinic</label><input id="facility" name="facility" autocomplete="organization" placeholder="Facility name">
-        <label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+91">
-        <label for="service">What do you need?</label><select id="service" name="service"><option value="">Choose a service</option><option>Surgical instruments</option><option>Orthopedic implants</option><option>Endoscopes & devices</option><option>Dental instruments</option><option>Catheters, tubes & labware</option><option>Pickup & delivery</option><option>Other enquiry</option></select>
-        <label for="message">A few details <span class="optional">(optional)</span></label><textarea id="message" name="message" rows="3" placeholder="Tell us what your facility needs"></textarea>
-        <button class="button button-primary form-submit" type="submit">Continue in WhatsApp <span aria-hidden="true">↗</span></button>
-        <p class="form-note" id="formNote" role="status" aria-live="polite">Your details are used to prepare a WhatsApp message; nothing is stored on this static website.</p>
+        <div class="form-top"><span class="eyebrow">BOOK A PICKUP OR ASK A QUESTION</span><span class="form-live"><i></i> 24/7 SUPPORT</span></div>
+        <p class="form-intro">For hospitals, clinics and healthcare teams. Choose a pickup request or a general enquiry.</p>
+        <fieldset class="request-mode">
+          <legend>How can we help?</legend>
+          <label><input type="radio" name="requestType" value="pickup" checked> Request pickup</label>
+          <label><input type="radio" name="requestType" value="enquiry"> General enquiry</label>
+        </fieldset>
+        <div class="form-grid">
+          <div class="form-field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name"></div>
+          <div class="form-field"><label for="facility">Hospital / clinic</label><input id="facility" name="facility" autocomplete="organization" required placeholder="Facility name"></div>
+          <div class="form-field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+91"></div>
+          <div class="form-field"><label for="service">Service required</label><select id="service" name="service" required><option value="">Choose a service</option><option>Surgical instruments</option><option>Orthopedic implants</option><option>Endoscopes &amp; devices</option><option>Dental instruments</option><option>Catheters, tubes &amp; labware</option><option>Other enquiry</option></select></div>
+        </div>
+        <fieldset class="booking-fields" id="bookingFields">
+          <legend>PICKUP AND DELIVERY DETAILS</legend>
+          <div class="form-field"><label for="pickupAddress">Pickup address</label><textarea id="pickupAddress" name="pickupAddress" autocomplete="street-address" rows="2" required placeholder="Hospital / clinic pickup address"></textarea></div>
+          <div class="booking-grid">
+            <div class="form-field"><label for="pickupDate">Preferred pickup date</label><input id="pickupDate" name="pickupDate" type="date" required></div>
+            <div class="form-field"><label for="pickupWindow">Preferred time window</label><select id="pickupWindow" name="pickupWindow" required><option value="">Choose a time</option><option>Morning, 9 am to 12 pm</option><option>Afternoon, 12 pm to 4 pm</option><option>Evening, 4 pm to 8 pm</option><option>Urgent, please call me</option></select></div>
+          </div>
+          <div class="form-field"><label for="quantity">Approximate trays / boxes for pickup</label><input id="quantity" name="quantity" type="number" min="1" step="1" inputmode="numeric" required placeholder="For example, 3"></div>
+          <label class="same-address"><input id="sameAddress" name="sameAddress" type="checkbox" checked> Delivery address is the same as pickup</label>
+          <div class="form-field"><label for="deliveryAddress">Delivery address</label><textarea id="deliveryAddress" name="deliveryAddress" autocomplete="shipping street-address" rows="2" placeholder="Same as pickup address"></textarea></div>
+        </fieldset>
+        <div class="form-field"><label for="message">Additional details <span class="optional">(optional)</span></label><textarea id="message" name="message" rows="3" placeholder="Instrument notes, access instructions or your question"></textarea></div>
+        <button class="button button-primary form-submit" id="formSubmit" type="submit">Continue pickup request in WhatsApp <span aria-hidden="true">↗</span></button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite">Your preferred date and time are a request, not a confirmed booking. Our team will confirm with you on WhatsApp. This static website does not store form entries.</p>
       </form>
     </section>
 
@@ -127,5 +146,4 @@
   <footer class="site-footer"><a class="brand footer-brand" href="#top"><img src="assets/logo.png" alt="" width="38" height="38"><span class="brand-copy"><strong>KIAAN <em>ETO</em></strong><small>CENTRE STERILIZATION</small></span></a><p>Clean today. Safer tomorrow.</p><div class="footer-right"><span>AHMEDABAD, GUJARAT</span><span>© <span id="year"></span> KIAAN ETO CENTRE STERILIZATION</span></div></footer>
   <a class="floating-whatsapp" href="https://wa.me/919558537188" target="_blank" rel="noopener noreferrer" aria-label="Chat with KIAAN ETO on WhatsApp"><span aria-hidden="true">◌</span><b>WhatsApp</b></a>
 </body>
-    </html>
-    
+  </html>
