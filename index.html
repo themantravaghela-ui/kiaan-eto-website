@@ -1,470 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIAAN ETO Centre Sterilization | Clean Today, Safer Tomorrow</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="description" content="KIAAN ETO Centre Sterilization provides ETO sterilization and 24/7 pickup and delivery support for hospitals and clinics in Ahmedabad, Gujarat.">
+  <meta property="og:title" content="KIAAN ETO | Precision Sterilization">
+  <meta property="og:description" content="Advanced ETO sterilization. Reliable service for healthcare teams in Ahmedabad.">
+  <meta property="og:type" content="website">
+  <title>KIAAN ETO | Precision Sterilization, Safer Care</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 50 50" fill="none">
-                        <rect x="2" y="2" width="46" height="46" rx="8" fill="#0a2a5c"/>
-                        <path d="M14 12 L24 25 L14 38" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-                        <path d="M24 12 L24 38" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
-                        <circle cx="40" cy="40" r="7" fill="#0d8a9e"/>
-                        <path d="M40 36 V44 M36 40 H44" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-main">KIAAN ETO</span>
-                    <span class="logo-sub">CENTRE STERILIZATION</span>
-                    <span class="logo-tag">CLEAN TODAY, SAFER TOMORROW</span>
-                </div>
-            </a>
-            <nav class="navbar" id="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#whyus">Why Us</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
-            <a href="#contact" class="btn btn-nav">Get In Touch</a>
-            <div class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="badge">
-                    <i class="fas fa-play-circle"></i>
-                    ADVANCED ETO TECHNOLOGY
-                </div>
-                <h1><span class="text-blue">PRECISION</span><br>STERILIZATION</h1>
-                <h2>COMPLETE PROTECTION.<br>TOTAL CONFIDENCE.</h2>
-                <p>KIAAN ETO Centre Sterilization provides advanced, reliable and safe sterilization solutions for medical instruments with cutting-edge ETO technology.</p>
-                <div class="hero-buttons">
-                    <a href="tel:9558537188" class="btn btn-call">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
-                    <a href="https://wa.me/919558537188" class="btn btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Us
-                    </a>
-                </div>
-                <div class="hero-trust">
-                    <div class="trust-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>ISO Certified</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-clock"></i>
-                        <span>On Time Service</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-shield-halved"></i>
-                        <span>Quality Assured</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-headset"></i>
-                        <span>24x7 Support</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-curve"></div>
-                <div class="hero-img-wrapper">
-                    <img src="images/hero - equipment.jpg" alt="ETO Sterilization Machine" id="heroImg">
-                    <div class="trusted-badge">
-                        <span class="trusted-label">TRUSTED BY</span>
-                        <span class="trusted-text">HOSPITALS<br>CLINICS &<br>DIAGNOSTIC<br>CENTERS</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">OUR SERVICES</span>
-                <h2>We Sterilize a Wide Range of<br>Instruments & Devices</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="20" cy="18" r="6"/>
-                            <circle cx="40" cy="18" r="6"/>
-                            <path d="M20 24 L20 40 L16 48 M20 40 L24 48"/>
-                            <path d="M40 24 L40 40 L36 48 M40 40 L44 48"/>
-                            <line x1="26" y1="18" x2="34" y2="18"/>
-                        </svg>
-                    </div>
-                    <h3>Surgical<br>Instruments</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M30 10 C22 10 20 18 20 22 C20 28 24 32 30 35 C36 32 40 28 40 22 C40 18 38 10 30 10Z"/>
-                            <circle cx="30" cy="22" r="4"/>
-                            <path d="M30 35 L30 48"/>
-                            <path d="M24 42 L36 42"/>
-                            <path d="M22 48 C22 52 26 55 30 55 C34 55 38 52 38 48"/>
-                        </svg>
-                    </div>
-                    <h3>Orthopedic<br>Implants</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M45 15 C50 20 52 30 48 38 C44 46 36 50 30 50 C24 50 16 46 12 38 C8 30 10 20 15 15"/>
-                            <path d="M42 18 C46 22 48 30 45 36 C42 42 36 46 30 46 C24 46 18 42 15 36 C12 30 14 22 18 18"/>
-                            <circle cx="30" cy="32" r="5"/>
-                            <path d="M30 27 L30 15"/>
-                            <path d="M26 19 L34 19"/>
-                        </svg>
-                    </div>
-                    <h3>Endoscopes</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 15 C22 10 26 8 30 8 C34 8 38 10 38 15 L38 22 C38 26 34 28 30 28 C26 28 22 26 22 22 Z"/>
-                            <path d="M26 28 L26 45 C26 50 28 52 30 52 C32 52 34 50 34 45 L34 28"/>
-                            <path d="M24 20 L28 20 M32 20 L36 20"/>
-                        </svg>
-                    </div>
-                    <h3>Dental<br>Instruments</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 10 L15 50" stroke-linecap="round"/>
-                            <path d="M45 10 L45 50" stroke-linecap="round"/>
-                            <path d="M15 22 Q25 22 25 32 Q25 42 15 42"/>
-                            <path d="M45 22 Q35 22 35 32 Q35 42 45 42"/>
-                            <line x1="20" y1="16" x2="40" y2="16"/>
-                        </svg>
-                    </div>
-                    <h3>Catheters<br>& Tubes</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 10 L20 42 L15 52 M20 42 L25 52"/>
-                            <path d="M30 10 L30 48 L25 52 M30 48 L35 52"/>
-                            <path d="M40 10 L40 42 L35 52 M40 42 L45 52"/>
-                            <line x1="15" y1="22" x2="45" y2="22"/>
-                            <line x1="15" y1="34" x2="45" y2="34"/>
-                        </svg>
-                    </div>
-                    <h3>Laboratory<br>Glassware</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="#0a2a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="30" y1="5" x2="30" y2="18"/>
-                            <rect x="22" y="18" width="16" height="26" rx="3"/>
-                            <line x1="26" y1="26" x2="34" y2="26"/>
-                            <line x1="26" y1="32" x2="34" y2="32"/>
-                            <line x1="26" y1="38" x2="34" y2="38"/>
-                            <path d="M22 44 L18 54 M38 44 L42 54"/>
-                        </svg>
-                    </div>
-                    <h3>Implantable<br>Devices</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="whyus" id="whyus">
-        <div class="container">
-            <div class="section-header left">
-                <span class="section-label">WHY CHOOSE KIAAN ETO CENTRE?</span>
-                <h2>Why Leading Doctors & Facilities Trust Us</h2>
-                <div class="section-line left-line"></div>
-            </div>
-            <div class="whyus-content">
-                <div class="whyus-features">
-                    <div class="feature-card">
-                        <div class="feature-icon purple">
-                            <i class="fas fa-shield-halved"></i>
-                        </div>
-                        <h3>MAXIMUM SAFETY</h3>
-                        <p>Advanced ETO process ensures complete sterilization, protecting patients and healthcare teams.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon teal">
-                            <i class="fas fa-crosshairs"></i>
-                        </div>
-                        <h3>INSTRUMENT CARE</h3>
-                        <p>Maintains sharpness, precision & performance for longer instrument life.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon blue">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <h3>COST EFFECTIVE</h3>
-                        <p>Extends instrument durability and reduces replacement costs.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon green">
-                            <i class="fas fa-clipboard-check"></i>
-                        </div>
-                        <h3>FULL COMPLIANCE</h3>
-                        <p>Follows WHO, AAMI & ISO standards for total peace of mind.</p>
-                    </div>
-                </div>
-                <div class="whyus-image">
-                    <img src="images/Instruments.jpg" alt="Surgical Instruments" id="whyusImg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <i class="fas fa-hospital"></i>
-                    <div class="stat-number" data-target="50">0</div>
-                    <span class="stat-suffix">+</span>
-                    <p>Hospitals & Clinics<br>Served</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-shield-halved"></i>
-                    <div class="stat-number" data-target="500000">0</div>
-                    <span class="stat-suffix">+</span>
-                    <p>Instruments Sterilized<br>Every Month</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i>
-                    <div class="stat-number" data-target="99.99" data-decimal="true">0</div>
-                    <span class="stat-suffix">%</span>
-                    <p>Sterilization<br>Success Rate</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <div class="stat-number" data-target="24">0</div>
-                    <span class="stat-suffix">/7</span>
-                    <p>Pickup & Delivery<br>Support</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">OUR GALLERY</span>
-                <h2>Explore Our Sterilization Process</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/gallery1.jpg" alt="Sterilization Process">
-                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery2.jpg" alt="Medical Equipment">
-                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery3.jpg" alt="Lab Work">
-                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery4.jpg" alt="Hospital Setup">
-                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>95585 37188 | 91573 10262</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@kiaaneto.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-location-dot"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>416, 4th Floor, Atria Business Zone,<br>Jinning Press, Amdupura, D Colony,<br>Ahmedabad, Gujarat 382345</p>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/919558537188" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-                        <a href="tel:+919558537188"><i class="fas fa-phone"></i></a>
-                        <a href="mailto:info@kiaaneto.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-
-                <div class="kiaan-contact-form-wrap">
-                    <h3>Send Us a Message</h3>
-                    <form id="kiaanContactForm" class="kiaan-contact-form">
-                        <label for="kiaanName">Your Name</label>
-                        <input id="kiaanName" name="name" type="text" autocomplete="name" required placeholder="Your name">
-                        <label for="kiaanPhone">Phone Number</label>
-                        <input id="kiaanPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+91 98765 43210">
-                        <label for="kiaanFacility">Hospital / Clinic</label>
-                        <input id="kiaanFacility" name="facility" type="text" autocomplete="organization" placeholder="Hospital or clinic name">
-                        <label for="kiaanService">Service Required</label>
-                        <select id="kiaanService" name="service">
-                            <option value="">Select a service</option>
-                            <option>Surgical Instruments</option>
-                            <option>Orthopedic Implants</option>
-                            <option>Endoscopes</option>
-                            <option>Dental Instruments</option>
-                            <option>Laboratory Equipment</option>
-                            <option>Pickup & Delivery</option>
-                        </select>
-                        <label for="kiaanMessage">Message</label>
-                        <textarea id="kiaanMessage" name="message" rows="4" required placeholder="Tell us about your requirement"></textarea>
-                        <button type="submit" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
-                        <p id="kiaanFormStatus" class="kiaan-form-status" role="status" aria-live="polite"></p>
-                    </form>
-                </div>
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6979!2d72.5714!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1600000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="#" class="logo">
-                        <div class="logo-icon">
-                            <svg viewBox="0 0 50 50" fill="none">
-                                <rect x="2" y="2" width="46" height="46" rx="8" fill="#0d8a9e"/>
-                                <path d="M14 12 L24 25 L14 38" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-                                <path d="M24 12 L24 38" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
-                                <circle cx="40" cy="40" r="7" fill="#0a2a5c"/>
-                                <path d="M40 36 V44 M36 40 H44" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <div class="logo-text">
-                            <span class="logo-main">KIAAN ETO</span>
-                            <span class="logo-sub">CENTRE STERILIZATION</span>
-                        </div>
-                    </a>
-                    <p>KIAAN ETO Centre Sterilization is committed to providing world-class ETO sterilization services with advanced technology, expertise, and a strong focus on safety and quality.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/919558537188" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-                        <a href="tel:+919558537188"><i class="fas fa-phone"></i></a>
-                        <a href="mailto:info@kiaaneto.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#whyus">Why Us</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">ETO Sterilization</a></li>
-                        <li><a href="#">Surgical Instruments</a></li>
-                        <li><a href="#">Dental Instruments</a></li>
-                        <li><a href="#">Endoscopes</a></li>
-                        <li><a href="#">Orthopedic Implants</a></li>
-                        <li><a href="#">Laboratory Equipment</a></li>
-                        <li><a href="#">Pickup & Delivery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> 95585 37188 | 91573 10262</li>
-                        <li><i class="fas fa-envelope"></i> info@kiaaneto.com</li>
-                        <li><i class="fas fa-location-dot"></i> 416, 4th Floor, Atria Business Zone, Jinning Press, Amdupura, D Colony, Ahmedabad, Gujarat 382345</li>
-                    </ul>
-                    <div class="footer-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6979!2d72.5714!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1600000000000" width="100%" height="150" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bottom Bar -->
-    <div class="bottom-bar">
-        <div class="container">
-            <div class="bottom-item">
-                <i class="fas fa-shield-halved"></i>
-                <span>STERILIZED TODAY.<br>PROTECTED TOMORROW.</span>
-            </div>
-            <div class="bottom-item">
-                <i class="fas fa-leaf"></i>
-                <span>CLEAN PROCESS.<br>GREENER FUTURE.</span>
-            </div>
-            <div class="bottom-item">
-                <i class="fas fa-shield-halved"></i>
-                <span>YOUR SAFETY.<br>OUR PRIORITY.</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <p>&copy; 2024 KIAAN ETO Centre Sterilization. All Rights Reserved.</p>
-        </div>
-    </div>
-
-    <!-- Scroll to Top -->
-    <a href="#" class="scroll-top" id="scrollTop">
-        <i class="fas fa-chevron-up"></i>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="KIAAN ETO home">
+      <img src="assets/logo.png" alt="" width="42" height="42">
+      <span class="brand-copy"><strong>KIAAN <em>ETO</em></strong><small>CENTRE STERILIZATION</small></span>
     </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#about">Our approach</a><a href="#impact">Impact</a><a href="#location">Location</a>
+    </nav>
+    <a class="header-cta" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
+  </header>
 
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse-dot"></span> ETO STERILIZATION · AHMEDABAD, INDIA</p>
+        <h1>Precision care.<br><span>Beyond the visible.</span></h1>
+        <p class="hero-lede">Dependable ethylene oxide sterilization for the instruments your care teams rely on, handled with attention, traceability and timely service.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Plan a pickup <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="tel:+919558537188"><span class="phone-icon" aria-hidden="true">＋</span> Call 95585 37188</a>
+        </div>
+        <div class="hero-meta"><span><i class="tiny-square"></i> Hospitals & clinics</span><span><i class="tiny-square rose"></i> Pickup support, 24/7</span></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="ETO sterilization equipment">
+        <div class="visual-label"><span>PROCESS / 01</span><span>ETO STERILIZATION</span></div>
+        <div class="hero-photo-wrap"><img src="assets/hero-equipment.jpg" alt="ETO sterilization equipment at KIAAN ETO Centre" fetchpriority="high"></div>
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="floating-card"><span class="floating-icon" aria-hidden="true">✳</span><span><strong>Every cycle matters.</strong><small>Safety is built into the process.</small></span></div>
+        <span class="visual-coordinate" aria-hidden="true">23°04' N&nbsp; / &nbsp;72°37' E</span>
+      </div>
+      <a class="scroll-cue" href="#services"><span></span> SCROLL TO EXPLORE</a>
+    </section>
 
-    <div id="kiaanScrollProgress" aria-hidden="true"></div>
-    <a id="kiaanFloatingWhatsApp" href="https://wa.me/919558537188" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i><span>WhatsApp Us</span>
-    </a>
-    <script src="script-corrected.js"></script>
+    <section class="metrics section-shell" id="impact" aria-label="KIAAN ETO service metrics">
+      <div class="metric-intro"><p class="eyebrow">TRUST, MEASURED</p><p>Capacity and service standards that support busy healthcare teams.</p></div>
+      <div class="metric"><strong data-count="70" data-suffix="+">70+</strong><span>Hospitals & clinics<br>served</span></div>
+      <div class="metric"><strong data-count="1500" data-suffix="+">1,500+</strong><span>Instruments sterilized<br>each month</span></div>
+      <div class="metric"><strong data-count="99.99" data-suffix="%" data-decimal="true">99.99%</strong><span>Sterilization<br>success rate</span></div>
+      <div class="metric"><strong>24<span class="metric-small">/7</span></strong><span>Pickup & delivery<br>support</span></div>
+    </section>
+
+    <section class="services section-shell" id="services">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / WHAT WE HANDLE</p><h2>Specialist care for<br><span>critical instruments.</span></h2></div><p>ETO processing for heat- and moisture-sensitive medical devices, with pickup and delivery support designed around your schedule.</p></div>
+      <div class="service-stage">
+        <div class="service-image reveal"><img src="assets/instruments.jpg" alt="Medical instruments prepared for professional sterilization" loading="lazy"><div class="image-caption"><span>INSTRUMENT CARE</span><span>01 - 06</span></div></div>
+        <div class="service-list">
+          <article class="service-row reveal"><span class="service-index">01</span><div><h3>Surgical instruments</h3><p>Carefully handled for the demands of clinical practice.</p></div><span class="service-mark">↗</span></article>
+          <article class="service-row reveal"><span class="service-index">02</span><div><h3>Orthopedic implants</h3><p>Specialized processing for compatible implant devices.</p></div><span class="service-mark">↗</span></article>
+          <article class="service-row reveal"><span class="service-index">03</span><div><h3>Endoscopes &amp; devices</h3><p>ETO sterilization for suitable heat-sensitive equipment.</p></div><span class="service-mark">↗</span></article>
+          <article class="service-row reveal"><span class="service-index">04</span><div><h3>Dental instruments</h3><p>Reliable support for dental clinics and practices.</p></div><span class="service-mark">↗</span></article>
+          <article class="service-row reveal"><span class="service-index">05</span><div><h3>Catheters, tubes &amp; labware</h3><p>Processing support for compatible medical supplies.</p></div><span class="service-mark">↗</span></article>
+          <article class="service-row reveal"><span class="service-index">06</span><div><h3>Pickup &amp; delivery</h3><p>Round-the-clock coordination for your facility.</p></div><span class="service-mark">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto section-shell" id="about">
+      <div class="manifesto-side reveal"><p class="eyebrow">02 / OUR APPROACH</p><div class="manifesto-stamp" aria-hidden="true"><span>K</span><i>✳</i></div><p class="mono-note">CLEAN TODAY.<br>SAFER TOMORROW.</p></div>
+      <div class="manifesto-copy reveal"><h2>Every instrument has a journey.<br><span>We take care of the in-between.</span></h2><p>From pickup to processing and return, KIAAN ETO Centre supports healthcare providers with thoughtful service and a quality-focused sterilization workflow. Our team is here around the clock to coordinate collection and delivery.</p><a class="text-link" href="#contact">Start a conversation <span>↗</span></a></div>
+      <div class="manifesto-image reveal"><img src="assets/gallery1.jpg" alt="Sterilization workflow at the KIAAN ETO Centre" loading="lazy"><span class="image-index">KIAAN / FIELD NOTES 01</span></div>
+    </section>
+
+    <section class="process section-shell">
+      <div class="section-heading compact reveal"><div><p class="eyebrow">03 / A CLEAR PROCESS</p><h2>One coordinated<br><span>service journey.</span></h2></div><p>Reach out to arrange service. Our team will confirm instrument suitability, timing and collection details with your facility.</p></div>
+      <div class="process-track">
+        <article class="process-step reveal"><span class="step-number">01</span><span class="step-line"></span><h3>Coordinate</h3><p>Tell us what your hospital or clinic needs and when.</p></article>
+        <article class="process-step reveal"><span class="step-number">02</span><span class="step-line"></span><h3>Collect</h3><p>Arrange convenient pickup with our 24/7 support team.</p></article>
+        <article class="process-step reveal"><span class="step-number">03</span><span class="step-line"></span><h3>Process</h3><p>Compatible instruments are handled for ETO sterilization.</p></article>
+        <article class="process-step reveal"><span class="step-number">04</span><span class="step-line"></span><h3>Return</h3><p>Coordinate delivery back to your facility.</p></article>
+      </div>
+    </section>
+
+    <section class="gallery section-shell">
+      <div class="gallery-heading reveal"><div><p class="eyebrow">04 / INSIDE KIAAN</p><h2>Care in every<br><span>detail.</span></h2></div><p>A closer look at the equipment and instruments behind our service.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-tile tile-large reveal"><img src="assets/gallery2.jpg" alt="Sterilization equipment and facility" loading="lazy"><figcaption>PROCESS &amp; EQUIPMENT <span>01</span></figcaption></figure>
+        <figure class="gallery-tile reveal"><img src="assets/gallery3.jpg" alt="Medical sterilization setup" loading="lazy"><figcaption>READY FOR PROCESSING <span>02</span></figcaption></figure>
+        <figure class="gallery-tile reveal"><img src="assets/gallery4.jpg" alt="Medical instruments at KIAAN ETO" loading="lazy"><figcaption>INSTRUMENT CARE <span>03</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-copy reveal"><p class="eyebrow">05 / GET IN TOUCH</p><h2>Let's keep your<br><span>care moving.</span></h2><p>Contact our team to discuss ETO sterilization, schedule pickup or ask a service question. Your message will open in WhatsApp for you to review and send.</p>
+        <div class="contact-details"><a href="tel:+919558537188"><span class="detail-label">CALL OUR TEAM</span><strong>+91 95585 37188</strong></a><a href="tel:+919157310262"><span class="detail-label">ALTERNATE LINE</span><strong>+91 91573 10262</strong></a><a href="mailto:info@kiaaneto.com"><span class="detail-label">EMAIL</span><strong>info@kiaaneto.com</strong></a></div>
+      </div>
+      <form class="inquiry-card reveal" id="inquiryForm">
+        <div class="form-top"><span class="eyebrow">SERVICE ENQUIRY</span><span class="form-live"><i></i> 24/7 PICKUP SUPPORT</span></div>
+        <label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name">
+        <label for="facility">Hospital / clinic</label><input id="facility" name="facility" autocomplete="organization" placeholder="Facility name">
+        <label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+91">
+        <label for="service">What do you need?</label><select id="service" name="service"><option value="">Choose a service</option><option>Surgical instruments</option><option>Orthopedic implants</option><option>Endoscopes & devices</option><option>Dental instruments</option><option>Catheters, tubes & labware</option><option>Pickup & delivery</option><option>Other enquiry</option></select>
+        <label for="message">A few details <span class="optional">(optional)</span></label><textarea id="message" name="message" rows="3" placeholder="Tell us what your facility needs"></textarea>
+        <button class="button button-primary form-submit" type="submit">Continue in WhatsApp <span aria-hidden="true">↗</span></button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite">Your details are used to prepare a WhatsApp message; nothing is stored on this static website.</p>
+      </form>
+    </section>
+
+    <section class="location section-shell" id="location">
+      <div class="location-heading reveal"><div><p class="eyebrow">06 / FIND US</p><h2>Visit KIAAN ETO<br><span>in Ahmedabad.</span></h2></div><a class="text-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=416%2C%204th%20Floor%2C%20Atria%20Business%20Zone%2C%20Jinning%20Press%2C%20Amdupura%2C%20D%20Colony%2C%20near%20Hotel%20Shri%20Krishna%20Palace%2C%20Aditya%20Nagar%2C%20Ahmedabad%2C%20Gujarat%20382345" target="_blank" rel="noopener noreferrer">Get directions <span>↗</span></a></div>
+      <div class="location-card reveal"><div class="address-block"><span class="location-pin" aria-hidden="true">⌖</span><p>416, 4th Floor, Atria Business Zone,<br>Jinning Press, Amdupura, D Colony,<br>near Hotel Shri Krishna Palace, Aditya Nagar,<br>Ahmedabad, Gujarat 382345</p><a href="https://www.google.com/maps/search/?api=1&amp;query=416%2C%204th%20Floor%2C%20Atria%20Business%20Zone%2C%20Jinning%20Press%2C%20Amdupura%2C%20D%20Colony%2C%20near%20Hotel%20Shri%20Krishna%20Palace%2C%20Aditya%20Nagar%2C%20Ahmedabad%2C%20Gujarat%20382345" target="_blank" rel="noopener noreferrer">Open this address in Google Maps ↗</a></div><div class="map-frame"><iframe title="Map to KIAAN ETO Centre Sterilization, Atria Business Zone, Ahmedabad" src="https://maps.google.com/maps?q=416%2C%204th%20Floor%2C%20Atria%20Business%20Zone%2C%20Jinning%20Press%2C%20Amdupura%2C%20D%20Colony%2C%20near%20Hotel%20Shri%20Krishna%20Palace%2C%20Aditya%20Nagar%2C%20Ahmedabad%2C%20Gujarat%20382345&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><span class="map-caption">ATRIA BUSINESS ZONE · AHMEDABAD</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><img src="assets/logo.png" alt="" width="38" height="38"><span class="brand-copy"><strong>KIAAN <em>ETO</em></strong><small>CENTRE STERILIZATION</small></span></a><p>Clean today. Safer tomorrow.</p><div class="footer-right"><span>AHMEDABAD, GUJARAT</span><span>© <span id="year"></span> KIAAN ETO CENTRE STERILIZATION</span></div></footer>
+  <a class="floating-whatsapp" href="https://wa.me/919558537188" target="_blank" rel="noopener noreferrer" aria-label="Chat with KIAAN ETO on WhatsApp"><span aria-hidden="true">◌</span><b>WhatsApp</b></a>
 </body>
-</html>
+    </html>
+    
